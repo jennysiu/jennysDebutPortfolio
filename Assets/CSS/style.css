@@ -1,0 +1,133 @@
+
+/* colour pallette test */
+#colourTestOne {
+  /* background-color: #e27d60; */
+}
+#colourTestTwo {
+  /* background-color: #85dcba; */
+}
+#colourTestThree {
+  background-color: #E8A87C;
+}
+#colourTestFour {
+  background-color: #C38D9E;
+}
+#colourTestFive {
+  background-color: #41B3A3;
+}
+
+/* Assign variables here */
+:root {
+--pink: #C38D9E;
+--orange: #E8A87C;
+--green: #41B3A3;
+--bodyFontColour: #000001;
+
+}
+
+* {
+  box-sizing: border-box;
+  /* I think so that contents stay inside the border box */
+}
+
+h1, h2, h3 , h4{
+  font-family: "crimson Text", serif;
+  color: var(--green);
+}
+
+p { 
+  font-family: "work sans", sans-serif;
+  color: var(--bodyFontColour);
+}
+
+/* HEADER */
+header {
+  display: inline;
+  background-color: var(--pink);
+  /* text-align: center; */
+}
+/* NAVIGATION BAR */
+
+nav ul {
+  font-family: "work sans", sans-serif;
+  list-style-type: none;
+  /* Positioning */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.bannerContainer {
+  /* container created so that I can crop the hero banner image without stretching it to fill the space. */
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.heroBanner {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../Images/heroBanner.jpg");
+    background-position: center;
+    object-fit: cover;
+}
+
+/* MAIN SECTION */
+
+.pageSection { 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px; 
+}
+#aboutMe {
+
+}
+
+#projects {
+
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-areas: 
+  "heading horiseonCodeRefractor horiseonCodeRefractor"
+  "heading preWorkStudyGuide blossomWebsite"
+  "heading projectFour projectFive"
+  ;
+}
+
+/* Grid elements */
+#projects h3 {
+  grid-area: heading;
+}
+
+.horiseonCodeRefractor {
+  grid-area: horiseonCodeRefractor;
+}
+
+.preWorkStudyGuide {
+  grid-area: preWorkStudyGuide;
+}
+
+.blossomWebsite {
+  grid-area: blossomWebsite;
+}
+
+.projectFour {
+  grid-area: projectFour;
+}
+
+.projectFive {
+  grid-area: projectFive;
+}
+
+#contacts ul li {
+  font-family: "work sans", sans-serif;
+  list-style-type: none;
+  display: inline;
+}

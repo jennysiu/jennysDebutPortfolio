@@ -7,12 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lernantino // Web Developer</title>
   <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- Link to fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700"> 
+
 </head>
 
 <body>
+
+  <!-- colour testing -->
+  <!-- <section >
+    <h2 id="colourTestOne">#E27d60</h2>
+    <h2 id="colourTestTwo">#85dcba</h2>
+    <h2 id="colourTestThree">#E8A87C</h2>
+    <h2 id="colourTestFour">#C38D9E</h2>
+    <h2 id="colourTestFive">#41B3A3</h2>
+  </section> -->
+
+
   <!-- main logo / nav -->
   <header>
     <h1>Hello!</h1>
+    <!-- Maybe replace this with a logo picture (branch) -->
 
     <!-- NAVIGATION BAR -->
     <nav>
@@ -31,11 +47,11 @@
         </li>
       </ul>
     </nav>
-
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <section class="bannerContainer">
+    <img class="heroBanner" src="./Assets/Images/heroBanner.jpg" alt="banner image showing satelilite image of octopus-shaped volcanic lanscape.">
     <div>
       <h2></h2>
     </div>
@@ -45,41 +61,41 @@
   <main class="page-wrapper">
 
     <!-- about me -->
-    <section class="page-section" id="aboutMe">
+    <section class="pageSection" id="aboutMe">
       <h2>About Me</h2>
       <!-- consider removing subheading called About me -->
-      <p>Hello, I'm Jenny Siu, a front-end web developer from London, United Kingdom.</p>
+      <p>I'm Jenny Siu, a front-end web developer from London, United Kingdom.</p>
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="projects">
+    <!-- projects container -->
+    <section class="pageSection" id ="projects">
       <h2>Projects</h2>
 
-      <section id="horiseonCodeRefractor">
+      <section class="horiseonCodeRefractor">
         <h3>Horiseon code refractor</h3>
         <img url="">
         <p>HTML/CSS</p>
       </section>
 
-      <section id="preWorkStudyGuide"> 
+      <section class="preWorkStudyGuide"> 
         <h3>Prework study guide</h3>
         <img url="">
         <p>HTML/CSS</p>
       </section>
 
-      <section id="blossomWebsite"> 
+      <section class="blossomWebsite"> 
         <h3>Project 3</h3>
         <img url="">
         <p>JavaScript</p>
       </section>
 
-      <section id="projectFour"> 
+      <section class="projectFour"> 
         <h3>Project 4</h3>
         <img url="">
         <p>React</p>
       </section>
 
-      <section id="projectFive"> 
+      <section class="projectFive"> 
         <h3>Project 5</h3>
         <img url="">
         <p>Node</p>
@@ -88,8 +104,9 @@
     </section>
 
     <!-- contact -->
-    <section class="page-section" id="contacts">
+    <section class="pageSection" id="contacts">
       <h2>Contact Me</h2>
+
       <ul>
         <li>
           <a href="">GitHub</a>
@@ -104,15 +121,14 @@
         </li>
 
         <li>07802 xxxxxx</li>
-
       </ul>
     </section>
 
-        <!-- Resume -->
-        <section class="page-section" id="resume">
-          <h2>Resume</h2>
-          <a href="">Link to resume here.</a>
-        </section>
+    <!-- Resume -->
+    <section class="pageSection" id="resume">
+      <h2>Resume</h2>
+      <a href="">Link to resume here.</a>
+    </section>
 
     <!-- FOOTER SECTION -->
     <footer>
