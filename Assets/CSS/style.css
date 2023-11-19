@@ -21,8 +21,14 @@
 --pink: #C38D9E;
 --orange: #E8A87C;
 --green: #41B3A3;
+--headerFontColour: #000001;
 --bodyFontColour: #000001;
 
+}
+
+body {
+  width: 100%;
+  margin: 0px;
 }
 
 * {
@@ -32,8 +38,12 @@
 
 h1, h2, h3 , h4{
   font-family: "crimson Text", serif;
-  color: var(--green);
+  color: var(--headerFontColour);
 }
+
+a:visited {
+  color: var(--green);
+  }
 
 p { 
   font-family: "work sans", sans-serif;
@@ -42,9 +52,9 @@ p {
 
 /* HEADER */
 header {
-  display: inline;
-  background-color: var(--pink);
-  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 5%;
 }
 /* NAVIGATION BAR */
 
@@ -58,6 +68,8 @@ nav ul {
   gap: 20px;
 }
 
+/* BANNER IMAGE */
+
 .bannerContainer {
   /* container created so that I can crop the hero banner image without stretching it to fill the space. */
   width: 100%;
@@ -69,62 +81,115 @@ nav ul {
     height: auto;
     width: 100%;
     overflow: hidden;
-    background-image: url("../Images/heroBanner.jpg");
     background-position: center;
     object-fit: cover;
 }
 
+
+.profileImg {
+  height: auto;
+  width: 20%;
+}
+
+
 /* MAIN SECTION */
 
-.pageSection { 
+.pageSection {
+  width: 100%;
+  margin: 0px;
   display: flex;
+  align-items: flex-start;
   justify-content: flex-start;
-  align-items: center;
-  gap: 20px; 
-}
-#aboutMe {
-
+  border-left: solid 3px var(--orange);
+  
 }
 
-#projects {
-
+.pageSection h2 {
+  width: 30%;
+  height: 100%;
 }
 
-#projects {
+/* Projects section */
+
+
+.projectGrid {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px 100px 100px;
   grid-template-areas: 
-  "heading horiseonCodeRefractor horiseonCodeRefractor"
-  "heading preWorkStudyGuide blossomWebsite"
-  "heading projectFour projectFive"
-  ;
+  "horiseonCodeRefractor horiseonCodeRefractor"
+  "preWorkStudyGuide blossomWebsite"
+  "projectFour projectFive";
+  width: 60%;
+  
 }
 
-/* Grid elements */
-#projects h3 {
+/* Projects grid */
+.projectGridArea {
+  margin: 5px;
+  border: solid var(--pink) 4px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(../Images/imgOne.jpg);
+  background-position: center;
+}
+
+#projectsHeadingArea {
   grid-area: heading;
 }
 
-.horiseonCodeRefractor {
+#horiseonCodeRefractor {
   grid-area: horiseonCodeRefractor;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.preWorkStudyGuide {
+#preWorkStudyGuide {
   grid-area: preWorkStudyGuide;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
 }
 
-.blossomWebsite {
+#blossomWebsite {
   grid-area: blossomWebsite;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
 }
 
-.projectFour {
+#projectFour {
   grid-area: projectFour;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;: 
 }
 
-.projectFive {
+#projectFive {
   grid-area: projectFive;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
+
+.projectHeading {
+  background-color: rgba(0,0,0,0.7);
+  border-bottom: 5px solid var(--pink);
+  height: 30px;
+  color: white;
+  font-size: 25px;
+}
+
+.projectGridArea p {
+  color: white;
+}
+
+/* Contacts section */
 
 #contacts ul li {
   font-family: "work sans", sans-serif;
