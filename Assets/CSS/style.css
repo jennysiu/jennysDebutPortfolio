@@ -86,33 +86,45 @@ nav ul {
 }
 
 
-.profileImg {
-  height: auto;
-  width: 20%;
-}
-
-
 /* MAIN SECTION */
 
 .pageSection {
   width: 100%;
-  margin: 0px;
+  margin: 30px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  border-left: solid 3px var(--orange);
+
   
 }
 
 .pageSection h2 {
   width: 30%;
   height: 100%;
+  margin: 25px;
+  text-align: end;
 }
+
+.sectionContent {
+  width: 100%;
+  padding-left: 25px;
+  display: flex;
+  justify-content: flex-start;
+  border-left: solid 3px var(--orange);
+}
+
+.profileImg {
+  height: auto;
+  width: 200px;
+}
+
+
+
 
 /* Projects section */
 
 
-.projectGrid {
+#projectGrid {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 200px 100px 100px;
@@ -120,8 +132,7 @@ nav ul {
   "horiseonCodeRefractor horiseonCodeRefractor"
   "preWorkStudyGuide blossomWebsite"
   "projectFour projectFive";
-  width: 60%;
-  
+
 }
 
 /* Projects grid */
@@ -136,9 +147,7 @@ nav ul {
   background-position: center;
 }
 
-#projectsHeadingArea {
-  grid-area: heading;
-}
+
 
 #horiseonCodeRefractor {
   grid-area: horiseonCodeRefractor;
@@ -191,8 +200,17 @@ nav ul {
 
 /* Contacts section */
 
+#contacts ul {
+  padding: 0px;
+  margin: 0px;
+}
+
 #contacts ul li {
   font-family: "work sans", sans-serif;
   list-style-type: none;
   display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
