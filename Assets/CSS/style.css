@@ -211,6 +211,23 @@ nav ul {
   display: inline;
 }
 
+/* mobile screens */
+@media only screen and (max-width: 320px) {
+
+}
+
+
+/* small tablets screens */
 @media only screen and (max-width: 600px) {
+
+}
+
+/* small desktop screems */
+@media only screen and (max-width: 1024px) {
+
+}
+
+/* desktop screens */
+@media only screen and (max-width: 1280px) {
 
 }
