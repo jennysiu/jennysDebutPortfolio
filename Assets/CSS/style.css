@@ -1,21 +1,4 @@
 
-/* colour pallette test */
-#colourTestOne {
-  /* background-color: #e27d60; */
-}
-#colourTestTwo {
-  /* background-color: #85dcba; */
-}
-#colourTestThree {
-  background-color: #E8A87C;
-}
-#colourTestFour {
-  background-color: #C38D9E;
-}
-#colourTestFive {
-  background-color: #41B3A3;
-}
-
 /* Assign variables here */
 :root {
 --pink: #C38D9E;
@@ -27,7 +10,7 @@
 }
 
 html, body {
-  margin-right: 3%;
+  /* margin-right: 3%; */
 
 }
 
@@ -63,6 +46,7 @@ header {
 header h1 {
   padding-left: 20%;
   padding-right: 3%;
+  margin-bottom: 1%;
   background-color: var(--orange);
 
 }
@@ -127,9 +111,6 @@ nav ul {
   width: 200px;
 }
 
-
-
-
 /* Projects section */
 
 
@@ -141,13 +122,12 @@ nav ul {
   "horiseonCodeRefractor horiseonCodeRefractor"
   "preWorkStudyGuide blossomWebsite"
   "projectFour projectFive";
-
+  gap: 2%;
 }
 
 /* Projects grid */
 .projectGridArea {
-  margin-bottom: 2%;
-  border: solid var(--pink) 4px;
+  border: solid var(--pink) 3px;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -195,15 +175,26 @@ nav ul {
   justify-content: flex-end;
 }
 
-.projectHeading {
-  background-color: rgba(0,0,0,0.7);
-  border-bottom: 5px solid var(--pink);
+.projectGridArea {
+  color: white;
+}
+
+.textBox {
+  padding-right: 5%;
+  padding-left: 2%;
+  margin-bottom: 4%;
+  width: fit-content;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.projectGridArea h3 {
   height: 30px;
   color: white;
   font-size: 25px;
 }
 
 .projectGridArea p {
+  margin: 0px;
   color: white;
 }
 
