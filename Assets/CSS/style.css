@@ -23,10 +23,15 @@ a:visited {
   color: var(--green);
   }
 
+  a:hover {
+    color: var(--pink);
+  }
+
 p { 
   margin-left: 5%;  font-family: "work sans", sans-serif;
   color: var(--bodyFontColour);
 }
+
 
 /* HEADER */
 header {
@@ -44,6 +49,8 @@ header h1 {
   background-color: var(--orange);
 
 }
+
+
 /* NAVIGATION BAR */
 
 nav ul {
@@ -66,11 +73,9 @@ nav ul {
 }
 
 .heroBanner {
-    height: auto;
     width: 100%;
     overflow: hidden;
-    background-position: center;
-    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -80,9 +85,7 @@ nav ul {
   width: 100%;
   margin-top: 30px;
   padding-right: 5%;
-  display: flex;
-  /* background-color: #41B3A3; */
-  
+  display: flex;  
 }
 
 .pageSection h2 {
@@ -105,8 +108,9 @@ nav ul {
   width: 200px;
 }
 
-/* Projects section */
 
+
+/* Projects section */
 
 #projectGrid {
   display: grid;
@@ -116,7 +120,7 @@ nav ul {
   "horiseonCodeRefractor horiseonCodeRefractor"
   "preWorkStudyGuide blossomWebsite"
   "projectFour projectFive";
-  gap: 2%;
+  gap: 4%;
   padding-bottom: 3%;
 }
 
@@ -127,11 +131,9 @@ nav ul {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url(../Images/imgOne.jpg);
+  background-image: url(../Images/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
   background-position: center;
 }
-
-
 
 #horiseonCodeRefractor {
   grid-area: horiseonCodeRefractor;
@@ -232,7 +234,8 @@ nav ul {
   }
 
   #projectGrid {
-    display: block;
+    display: flex;
+    
   }  
 
   #contacts li {
@@ -240,7 +243,6 @@ nav ul {
   }
 
 }
-
 
 /* small tablets screens */
 @media only screen and (max-width: 600px) {
@@ -254,8 +256,20 @@ nav ul {
   }
   
   #projectGrid {
-    display: block;
-  }  
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 180px;
+    grid-template-areas: 
+    "horiseonCodeRefractor"
+    "horiseonCodeRefracto"
+    "preWorkStudyGuide"
+    "blossomWebsite"
+    "projectFour"
+    "projectFive";
+    gap: 1%;
+    padding-bottom: 6%;
+  }
+
 }
 
 /* small desktop screems */
