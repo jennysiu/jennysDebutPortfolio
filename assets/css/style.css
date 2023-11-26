@@ -130,7 +130,7 @@ nav ul {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  background-image: url(../images/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
+  background-image: url(../images/projectImage:\ pawel-czerwinski-unsplash.jpg);
   background-position: center;
 }
 
@@ -241,6 +241,15 @@ nav ul {
     display: block;
   }
 
+}
+
+/* FOOTER */
+footer {
+  padding: 1%;
+  margin-top: 3%;
+  text-align: center;
+  background-color: var(--orange);
+  
 }
 
 /* small tablets screens */
