@@ -125,6 +125,7 @@ nav ul {
 
 /* Projects grid */
 .projectGridArea {
+  position: relative;
   border: solid var(--pink) 3px;
   background-position: top;
   background-size: cover;
@@ -132,6 +133,11 @@ nav ul {
   cursor: pointer;
   background-image: url(../images/projectImage:\ pawel-czerwinski-unsplash.jpg);
   background-position: center;
+  z-index: 1;
+}
+
+.projectGridArea:hover {
+  opacity: 0.8;
 }
 
 #horiseonCodeRefractor {
