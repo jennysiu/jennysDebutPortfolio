@@ -9,10 +9,11 @@
 }
 
 
-h1, h2, h3 , h4{
+h1, h2, h4{
   font-family: "crimson Text", serif;
   color: var(--headerFontColour);
 }
+
 
 a:link {
   color: var(--green);
@@ -22,9 +23,9 @@ a:visited {
   color: var(--green);
   }
 
-  a:hover {
+a:hover {
     color: var(--pink);
-  }
+}
 
 p { 
   margin-left: 5%;  font-family: "work sans", sans-serif;
@@ -190,8 +191,9 @@ nav ul {
 }
 
 .projectGridArea h3 {
+  font-family: "crimson Text", serif;
   height: 30px;
-  color: white;
+  color: var(--green);
   font-size: 25px;
 }
 
